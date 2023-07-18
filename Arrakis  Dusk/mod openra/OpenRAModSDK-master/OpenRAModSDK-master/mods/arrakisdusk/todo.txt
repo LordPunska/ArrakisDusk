@@ -1,0 +1,2 @@
+1. menu, logot
+2. nshellmap toimiva (main menu battle)

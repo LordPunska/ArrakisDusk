@@ -1,0 +1,229 @@
+^WeaponGenericUpgrades:
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c090
+		Damage: 1
+		DamageTypes: Prone60Percent, TriggerProne
+
+
+^Rocket:
+	ReloadDelay: 40
+	Range: 3c0
+	Report: ROCKET1.WAV
+	Projectile: Bullet
+		Blockable: false
+		Speed: 281
+		Inaccuracy: 140
+		InaccuracyType: PerCellIncrement
+		Image: RPG
+		TrailImage: bazooka_trail2
+		TrailPalette: effect75alpha
+		TrailInterval: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 3000
+		Spread: 700
+		Falloff: 100, 0
+		Versus:
+			none: 15
+			wall: 75
+			building: 40
+			wood: 45
+			light: 70
+			heavy: 100
+			invulnerable: 0
+			cy: 20
+			harvester: 50
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+		DamageCalculationType: ClosestTargetablePosition
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: SandCrater, RockCrater
+		InvalidTargets: Vehicle, Structure
+	Warhead@3Eff: CreateEffect
+		Explosions: tiny_explosion
+		ImpactActors: false
+		ValidTargets: Ground, Air
+	Warhead@4Concrete: DamagesConcrete
+		Damage: 240
+
+^FullDamage:
+    Inherits: ^WeaponGenericUpgrades  
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c181
+		Versus:
+			Infantry: 100
+			Building: 100
+			Light: 100
+			Heavy: 100
+			Defense: 100
+			Concrete: 35
+			Shield: 0
+            
+^Missile:
+	Inherits: ^Rocket
+	ReloadDelay: 60
+	Range: 5c512
+	MinRange: 0c512
+	Projectile: Missile
+		Shadow: true
+		InaccuracyType: Maximum
+		Inaccuracy: 250
+		HorizontalRateOfTurn: 22
+		RangeLimit: 7c614
+		CruiseAltitude: 1c0
+		MinimumLaunchAngle: 64
+		VerticalRateOfTurn: 40
+		Image: MISSILE2
+		TrailImage: large_trail
+		Speed: 288
+	Warhead@1Dam: SpreadDamage
+		Damage: 4800
+		Spread: 1c0
+		Versus:
+			none: 15
+			wall: 75
+			building: 60
+			wood: 65
+			light: 90
+			heavy: 100
+			invulnerable: 0
+			cy: 30
+			harvester: 50
+		DamageTypes: Prone50Percent, SmallExplosionDeath
+	Warhead@proneeffect: TargetDamage
+		Damage: 1
+		Spread: 600
+		DamageTypes: TriggerProne
+	Warhead@4Concrete: DamagesConcrete
+		Damage: 720
+	Warhead@3Eff: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: EXPLSML1.WAV
+
+
+
+TowerMissile2:
+	Inherits: ^Missile
+	ReloadDelay: 100
+	Burst: 8
+	BurstDelays: 2
+	ValidTargets: Ground, Air
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Ground, Air
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+        
+M_LMG_H2:
+	Inherits: M_LMG
+	ReloadDelay: 25
+    
+155mm2:
+	Inherits: ^Cannon
+	ReloadDelay: 80
+    Burst: 8
+    BurstDelays: 5
+	Range: 5c512
+	Report: MORTAR1.WAV
+	Projectile: Bullet
+		Speed: 192
+		Blockable: false
+		Shadow: true
+		LaunchAngle: 62
+		ContrailLength: 20
+		Image: 155mm
+	Warhead@1Dam: SpreadDamage
+		Damage: 4500
+		Spread: 2c0
+		Versus:
+			none: 125
+			wall: 100
+			building: 100
+			wood: 70
+			light: 30
+			heavy: 20
+			invulnerable: 0
+			cy: 20
+			harvester: 25
+		DamageTypes: Prone50Percent, ExplosionDeath
+	Warhead@proneeffect: TargetDamage
+		DamageTypes: TriggerProne
+		Damage: 1
+		Spread: 1c512
+	Warhead@4Concrete: DamagesConcrete
+		Damage: 5625
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: EXPLMD2.WAV
+        
+mtank_pri2:
+	Inherits: ^Missile
+	ReloadDelay: 115
+	Burst: 10
+	BurstDelays: 5
+	Range: 8c0
+	ValidTargets: Ground, Air
+	Projectile: Missile
+		RangeLimit: 7c204
+	Warhead@1Dam: SpreadDamage
+		Damage: 6000
+		ValidTargets: Ground, Air
+	Warhead@4Concrete: DamagesConcrete
+		Damage: 900
+Swordjump:
+	Inherits: ^MG
+	ReloadDelay: 20
+    SoundVolume: 0.01
+    Range: 01c512
+    Report: hammer.wav, sword.wav, sword2.wav
+    ValidTargets: Ground
+    Warhead@1Dam: SpreadDamage
+		Damage: 1000
+		Spread: 1c0   
+		Versus:
+			none: 50
+			wall: 50
+			building: 100
+			wood: 70
+			light: 30
+			heavy: 20
+			invulnerable: 0
+			cy: 20
+			harvester: 25
+        DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+        
+LasgunHeavy:
+	Inherits: ^FullDamage
+	ReloadDelay: 40
+	Range: 7c0
+    Report: laser1.wav
+	Projectile: LaserZap
+		TrackTarget: false
+		Duration: 15
+		Width: 138
+		ZOffset: 4000
+		Color: FF000080
+		SecondaryBeam: true
+		SecondaryBeamWidth: 30
+		SecondaryBeamZOffset: 4000
+		SecondaryBeamColor: FFEECC
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c045
+		Damage: 5000
+		DamageTypes: Prone70Percent, TriggerProne, EnergyDeath        
+        
+ light_lasgun:
+	Inherits: ^FullDamage
+	ReloadDelay: 10
+	Range: 4c0
+    Report: laser1.wav
+	Projectile: LaserZap
+		TrackTarget: false
+		Duration: 15
+		Width: 138
+		ZOffset: 4000
+		Color: FF000080
+		SecondaryBeam: true
+		SecondaryBeamWidth: 30
+		SecondaryBeamZOffset: 4000
+		SecondaryBeamColor: FFEECC
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c045
+		Damage: 250
+		DamageTypes: Prone70Percent, TriggerProne, EnergyDeath  

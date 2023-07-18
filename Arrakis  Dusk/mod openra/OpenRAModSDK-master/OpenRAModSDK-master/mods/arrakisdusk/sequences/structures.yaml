@@ -1,0 +1,2007 @@
+concretea:
+	icon: icon_1slab.shp
+		Start: 0
+		Offset: 0,0
+	preview: icon_1slab.shp
+		Start: 0
+        Offset: 0,0
+
+
+concreteb:
+	icon: icon_2slab.shp
+		Start: 0
+		Offset: 0,0
+
+wall:
+	idle: DATA.R8
+		Frames: 2775, 2778, 2776, 2786, 2779, 2780, 2790, 2783, 2777, 2787, 2781, 2782, 2788, 2784, 2785, 2789
+		Length: 16
+		Offset: -16,16
+	damaged-idle: DATA.R8
+		Frames: 2791, 2794, 2792, 2802, 2795, 2796, 2806, 2799, 2793, 2803, 2797, 2798, 2804, 2800, 2801, 2805
+		Length: 16
+		Offset: -16,16
+	icon: icon_wall.shp
+		Start: 0
+		Offset: 0,0
+
+medium_gun_turret:
+	invisible: light_turret.shp
+		Start: 1
+	idle: light_turret.shp
+		Frames: 1,2,3,4,5,6,7,8
+		Length: 8
+		Offset: 0,0
+	damaged-idle: light_turret.shp
+		Frames: 8,9,10,11,12,13,14,16
+		Length: 8
+		Offset: 0,0
+	make: light_turret.shp
+		Start: 1
+		Length: 1
+		Offset: 0,0
+		ZOffset: 1024
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	turret: light_turret.shp
+		Start:1
+		Facings: 8
+		Offset: 0,0
+        UseClassicFacings: True
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: 8
+		Offset: 0,2
+		BlendMode: Additive
+	icon: icon_turret.shp
+		Start: 0
+		Offset: 0,0
+
+large_gun_turret:
+	invisible: medium_turret.shp
+		Start: 1
+	idle: medium_turret.shp
+		Frames: 1,2,3,4,5,6,7,8,9
+		Length: 9
+		Offset: 0,0
+	damaged-idle: medium_turret.shp
+		Frames: 1,2,3,4,5,6,7,8,9
+		Length: 9
+		Offset: 0,0
+	make: medium_turret.shp
+		Start: 1
+		Length: 8
+		Offset: 0,0
+		ZOffset: 1024
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	turret: medium_turret.shp
+		Start: 1
+		Facings: 8
+		Offset: 0,0
+        UseClassicFacings: True
+	icon: icon_rturret.shp
+		Start: 0
+		Offset: 0,0
+        
+barrage_turret:
+	invisible: medium_turret.shp
+		Start: 1
+	idle: medium_turret.shp
+		Frames: 1,2,3,4,5,6,7,8,9
+		Length: 9
+		Offset: 0,0
+	damaged-idle: medium_turret.shp
+		Frames: 1,2,3,4,5,6,7,8,9
+		Length: 9
+		Offset: 0,0
+	make: medium_turret.shp
+		Start: 1
+		Length: 8
+		Offset: 0,0
+		ZOffset: 1024
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	turret: medium_turret.shp
+		Start: 1
+		Facings: 8
+		Offset: 0,0
+        UseClassicFacings: True
+	icon: icon_bturret.shp
+		Start: 0
+		Offset: 0,0        
+
+conyard.atreides:
+	idle: conyard.shp
+		Start: 1
+        Tick: 250
+        Length: 2
+		Offset: 0,0
+	make: conyard.shp
+		Start: 1
+		Length: 1
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4403
+		Length: 12
+		Offset: -48,64
+		Tick: 100
+	damaged-idle: conyard.shp
+		Start: 3
+        Length: 3
+		Offset: 0,0
+        Tick: 500
+	crane-overlay: DATA.R8
+		Start: 4700
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	damaged-crane-overlay: DATA.R8
+		Start: 4700
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_conyard.shp
+		Start: 0
+		Offset: 0,0
+
+repair_pad.atreides:
+	make: repair.shp
+		Start: 1
+		Length: 1
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4645
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	idle: repair.shp
+		Start: 1
+        Length: 1
+        tick: 250
+		Offset: -0,0
+		ZOffset: -1c511
+	damaged-idle: repair.shp
+		Start: 2
+        Length: 1
+        tick: 250
+		Offset: 0,0
+		ZOffset: -1c511
+	active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	damaged-active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	icon: icon_repair.shp
+		Start: 0
+		Offset: 0,0
+
+repair_pad.harkonnen:
+	make: repair.shp
+		Start: 1
+		Length: 1
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4645
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	idle: repair.shp
+		Start: 1
+        Length: 1
+        tick: 250
+		Offset: -0,0
+		ZOffset: -1c511
+	damaged-idle: repair.shp
+		Start: 2
+        Length: 1
+        tick: 250
+		Offset: 0,0
+		ZOffset: -1c511
+	active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	damaged-active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	icon: icon_repair.shp
+		Start: 0
+		Offset: 0,0
+
+repair_pad.ordos:
+	make: repair.shp
+		Start: 1
+		Length: 1
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4645
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	idle: repair.shp
+		Start: 1
+        Length: 1
+        tick: 250
+		Offset: -0,0
+		ZOffset: -1c511
+	damaged-idle: repair.shp
+		Start: 2
+        Length: 1
+        tick: 250
+		Offset: 0,0
+		ZOffset: -1c511
+	active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	damaged-active: repair.shp
+		Start: 3
+		Length: 2
+		Offset: 0,0
+        Tick: 250
+		ZOffset: -1c511
+	icon: icon_repair.shp
+		Start: 0
+		Offset: 0,0
+
+starport.atreides:
+	idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	damaged-idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	damaged-active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	make: starport.shp
+		Start: 1
+		Length: 1
+        Tick: 200
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4623
+		Length: 11
+		Offset: -48,48
+		Tick: 100
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_starport.shp
+		Start: 0
+		Offset: 0,0
+
+power.atreides:
+	idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	crumble-overlay: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_powerplant.shp
+		Start: 0
+		Offset: 0,0
+
+barracks.atreides:
+	idle: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4450
+		Length: 9
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_barracks.shp
+		Start: 0
+		Offset: 0,0
+
+outpost.atreides:
+	idle: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	make: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4529
+		Length: 9
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-dish: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_radar.shp
+		Start: 0
+		Offset: 0,0
+
+refinery.atreides:
+	idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4506
+		Length: 12
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_refinery.shp
+		Start: 0
+		Offset: 0,0
+	smoke: DATA.R8
+		Start: 4138
+		Length: 14
+		Offset: 13,-16
+		Tick: 100
+		BlendMode: Additive
+
+silo.atreides:
+	idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	icon: icon_silo.shp
+		Start: 0
+		Offset: 0,0
+
+hightech.atreides:
+	Defaults:
+		Offset: 0,0
+	idle: htech.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4549
+		Length: 10
+		Tick: 100
+	damaged-idle: htech.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	production-welding: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: htech.shp
+		Frames: 4
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_hightech.shp
+		Start: 0
+		Offset: 0,0
+
+research.atreides:
+	idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4666
+		Length: 11
+		Offset: -48,80
+		Tick: 100
+	damaged-idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-lights: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_research.shp
+		Start: 0
+		Offset: 0,0
+
+research.harkonnen:
+	idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4666
+		Length: 11
+		Offset: -48,80
+		Tick: 100
+	damaged-idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-lights: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_research.shp
+		Start: 0
+		Offset: 0,0
+
+research.ordos:
+	idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4666
+		Length: 11
+		Offset: -48,80
+		Tick: 100
+	damaged-idle: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-lights: research.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_research.shp
+		Start: 0
+		Offset: 0,0
+
+palace.atreides:
+	idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	active: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4690
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	damaged-idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 631, 632, 633
+		Length: 3
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 663, 664, 665
+		Length: 3
+		Offset: -16,-16
+	icon: icon_palace.shp
+		Start: 0
+		Offset: 0,0
+
+light.atreides:
+	idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4568
+		Length: 9
+		Offset: -48,64
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	damaged-idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	production-welding:  DATA.R8
+		Start: 4908
+		Length: 10
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: DATA.R8
+		Frames: 4908, 4909, 4910, 4912, 4914, 4917
+		Length: 6
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_light.shp
+		Start: 0
+		Offset: 0,0
+
+heavy.atreides:
+	idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4602
+		Length: 9
+		Offset: -48,80
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	damaged-idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	production-welding: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+		#BlendMode: Additive
+		#ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_heavy.shp
+		Start: 0
+		Offset: 0,0
+    
+conyard.harkonnen:
+	idle: conyard.shp
+		Start: 1
+        Tick: 250
+        Length: 2
+		Offset: 0,0
+	make: conyard.shp
+		Start: 1
+		Length: 1
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4403
+		Length: 12
+		Offset: -48,64
+		Tick: 100
+	damaged-idle: conyard.shp
+		Start: 3
+        Length: 3
+		Offset: 0,0
+        Tick: 500
+	crane-overlay: DATA.R8
+		Start: 4714
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	damaged-crane-overlay: DATA.R8
+		Start: 4714
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_conyard.shp
+		Start: 0
+		Offset: 0,0
+
+starport.harkonnen:
+	idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	damaged-idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	damaged-active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	make: starport.shp
+		Start: 1
+		Length: 1
+        Tick: 200
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4623
+		Length: 11
+		Offset: -48,48
+		Tick: 100
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_starport.shp
+		Start: 0
+		Offset: 0,0
+
+power.harkonnen:
+	idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+    make: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	crumble-overlay: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_powerplant.shp
+		Start: 0
+		Offset: 0,0
+
+barracks.harkonnen:
+	idle: wor.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: wor.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4486
+		Length: 9
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: wor.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_wor.shp
+		Start: 0
+		Offset: 0,0
+
+outpost.harkonnen:
+	idle: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	make: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4529
+		Length: 9
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-dish: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_radar.shp
+		Start: 0
+		Offset: 0,0
+
+refinery.harkonnen:
+	idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4506
+		Length: 12
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_refinery.shp
+		Start: 0
+		Offset: 0,0
+	smoke: DATA.R8
+		Start: 4138
+		Length: 14
+		Offset: 13,-16
+		Tick: 100
+		BlendMode: Additive
+
+silo.harkonnen:
+	idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	icon: icon_silo.shp
+		Start: 0
+		Offset: 0,0
+
+hightech.harkonnen:
+	Defaults:
+		Offset: 0,0
+	idle: htech.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4549
+		Length: 10
+		Tick: 100
+	damaged-idle: htech.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	production-welding: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: htech.shp
+		Frames: 4
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_hightech.shp
+		Start: 0
+		Offset: 0,0
+
+palace.harkonnen:
+	idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	active: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4690
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	damaged-idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 631, 632, 633
+		Length: 3
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 663, 664, 665
+		Length: 3
+		Offset: -16,-16
+	icon: icon_palace.shp
+		Start: 0
+		Offset: 0,0
+
+light.harkonnen:
+	idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4568
+		Length: 9
+		Offset: -48,64
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	damaged-idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	production-welding:  DATA.R8
+		Start: 4908
+		Length: 10
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: DATA.R8
+		Frames: 4908, 4909, 4910, 4912, 4914, 4917
+		Length: 6
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_light.shp
+		Start: 0
+		Offset: 0,0
+
+heavy.harkonnen:
+	idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4602
+		Length: 9
+		Offset: -48,80
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	damaged-idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	production-welding: heavyfact.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+		#BlendMode: Additive
+		#ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_heavy.shp
+		Start: 0
+		Offset: 0,0
+
+conyard.ordos:
+	idle: conyard.shp
+		Start: 1
+        Tick: 250
+        Length: 2
+		Offset: 0,0
+	make: conyard.shp
+		Start: 1
+		Length: 1
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4403
+		Length: 12
+		Offset: -48,64
+		Tick: 100
+	damaged-idle: conyard.shp
+		Start: 3
+        Length: 3
+		Offset: 0,0
+        Tick: 500
+	crane-overlay: DATA.R8
+		Start: 4728
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	damaged-crane-overlay: DATA.R8
+		Start: 4728
+		Length: 14
+		Offset: -48,64
+		Tick: 80
+		ZOffset: 1023
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_conyard.shp
+		Start: 0
+		Offset: 0,0
+
+starport.ordos:
+	idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	damaged-idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	damaged-active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	make: starport.shp
+		Start: 1
+		Length: 1
+        Tick: 200
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4623
+		Length: 11
+		Offset: -48,48
+		Tick: 100
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_starport.shp
+		Start: 0
+		Offset: 0,0
+
+power.ordos:
+	idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+    make: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	crumble-overlay: DATA.R8
+		Start: 4426
+		Length: 13
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-zaps: small_power.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_powerplant.shp
+		Start: 0
+		Offset: 0,0
+
+barracks.ordos:
+	idle: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4450
+		Length: 9
+		Offset: -32,64
+		Tick: 100
+	damaged-idle: barracks.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 617, 618, 637, 638
+		Length: 4
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 649, 650, 669, 670
+		Length: 4
+		Offset: -16,-16
+	icon: icon_barracks.shp
+		Start: 0
+		Offset: 0,0
+
+outpost.ordos:
+	idle: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	make: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4529
+		Length: 9
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: radar.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-dish: radar.shp
+		Start: 1
+        Length:4
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_radar.shp
+		Start: 0
+		Offset: 0,0
+
+refinery.ordos:
+	idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4506
+		Length: 12
+		Offset: -48,64
+		ZOffset: 1024
+		Tick: 100
+	damaged-idle: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle-top: refinery.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_refinery.shp
+		Start: 0
+		Offset: 0,0
+	smoke: DATA.R8
+		Start: 4138
+		Length: 14
+		Offset: 13,-16
+		Tick: 100
+		BlendMode: Additive
+
+silo.ordos:
+	idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-idle: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	damaged-stages: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	make: silo.shp
+		Start: 1
+        Length:2
+        Tick: 250
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	icon: icon_silo.shp
+		Start: 0
+		Offset: 0,0
+
+hightech.ordos:
+	Defaults:
+		Offset: 0,0
+	idle: htech.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4549
+		Length: 10
+		Tick: 100
+	damaged-idle: htech.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	production-welding: htech.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: htech.shp
+		Frames: 4
+		Length: 1
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_hightech.shp
+		Start: 0
+		Offset: 0,0
+palace.ordos:
+	idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	active: palace.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4690
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	damaged-idle: palace.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 631, 632, 633
+		Length: 3
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 663, 664, 665
+		Length: 3
+		Offset: -16,-16
+	icon: icon_palace.shp
+		Start: 0
+		Offset: 0,0
+
+light.ordos:
+	idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4568
+		Length: 9
+		Offset: -48,64
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	damaged-idle-top: lightfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		ZOffset: 896
+	production-welding:  DATA.R8
+		Start: 4908
+		Length: 10
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	damaged-production-welding: DATA.R8
+		Frames: 4908, 4909, 4910, 4912, 4914, 4917
+		Length: 6
+		Offset: -48,64
+		Tick: 200
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_light.shp
+		Start: 0
+		Offset: 0,0
+
+heavy.ordos:
+	idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	make: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4602
+		Length: 9
+		Offset: -48,80
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	damaged-idle-top: heavyfact.shp
+		Start: 1
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+	production-welding: heavyfact.shp
+		Start: 3
+		Length: 1
+		Tick: 200
+        Offset: 0,0
+		#BlendMode: Additive
+		#ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_heavy.shp
+		Start: 0
+		Offset: 0,0
+
+palace.corrino:
+	idle: palace.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	active: palace.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: palace.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4690
+		Length: 10
+		Offset: -48,48
+		Tick: 100
+	damaged-idle: palace.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	bib: BLOXBASE.R8
+		Frames: 631, 632, 633
+		Length: 3
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 663, 664, 665
+		Length: 3
+		Offset: -16,-16
+	icon: icon_palace.shp
+		Start: 0
+		Offset: 0,0
+
+starport.smuggler:
+	idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	damaged-idle: starport.shp
+		Start: 1
+        Length: 2
+        Tick: 250
+		ZOffset: -1c511
+		Offset: 0,0
+	active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	damaged-active: starport.shp
+		Start: 1
+        Length: 4
+		ZOffset: -1c511
+		Offset: 0,0
+		BlendMode: Additive
+		Tick: 200
+	make: starport.shp
+		Start: 1
+		Length: 1
+        Tick: 200
+		Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4623
+		Length: 11
+		Offset: -48,48
+		Tick: 100
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_starport.shp
+		Start: 0
+		Offset: 0,0
+        
+heavy.mercenary:
+	idle: heavyfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	make: heavyfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	crumble-overlay: DATA.R8
+		Start: 4602
+		Length: 9
+		Offset: -48,80
+		ZOffset: 897
+		Tick: 100
+	damaged-idle: heavyfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	idle-top: heavyfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	damaged-idle-top: heavyfact.shp
+		Start: 1
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+	production-welding: heavyfact.shp
+		Start: 3
+		Length: 2
+		Tick: 200
+        Offset: 0,0
+		BlendMode: Additive
+		ZOffset: 1024
+	bib: BLOXBASE.R8
+		Frames: 611, 612, 613, 631, 632, 633
+		Length: 6
+		Offset: -16,-16
+	bib-Concrete: BLOXBASE.R8
+		Frames: 643, 644, 645, 663, 664, 665
+		Length: 6
+		Offset: -16,-16
+	icon: icon_heavy.shp
+		Start: 0
+		Offset: 0,0
+
+plates: # TODO: unused
+	idle: DATA.R8
+		Start: 3256
+		Length: 6
+	4-plates-icon: DATA.R8
+		Start: 4314
+		Offset: -30,-24
+	6-plates-icon: DATA.R8
+		Start: 4317
+		Offset: -30,-24
+lasgun_gun_turret:
+	invisible: light_turret.shp
+		Start: 1
+	idle: light_turret.shp
+		Frames: 1,2,3,4,5,6,7,8
+		Length: 8
+		Offset: 0,0
+	damaged-idle: light_turret.shp
+		Frames: 8,9,10,11,12,13,14,16
+		Length: 8
+		Offset: 0,0
+	make: light_turret.shp
+		Start: 1
+		Length: 1
+		Offset: 0,0
+		ZOffset: 1024
+	crumble-overlay: DATA.R8
+		Start: 4585
+		Length: 7
+		Offset: -16,16
+		Tick: 100
+		ZOffset: 1024
+	turret: light_turret.shp
+		Start:1
+		Facings: 8
+		Offset: 0,0
+        UseClassicFacings: True
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: 8
+		Offset: 0,2
+		BlendMode: Additive
+	icon: icon_lasturret.shp
+		Start: 0
+		Offset: 0,0

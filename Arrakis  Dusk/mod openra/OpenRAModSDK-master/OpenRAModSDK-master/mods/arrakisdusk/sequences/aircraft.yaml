@@ -1,0 +1,26 @@
+carryall:
+	idle: frigate.shp
+        Scale: 2.5
+		Start: 3
+		Facings: 8
+	icon: icon_carry.shp
+		Start: 0
+		Offset: 0,0
+
+ornithopter:
+	idle: orni.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+		Length: 2
+		Tick: 120
+		Transpose: true
+	icon: icon_orni.shp
+		Start: 0
+		Offset: 0,0
+
+frigate:
+	idle: freighliner.shp
+        Scale: 4
+		Start: 4
+		Facings: 8

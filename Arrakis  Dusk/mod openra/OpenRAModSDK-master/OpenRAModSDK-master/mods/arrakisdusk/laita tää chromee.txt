@@ -1,0 +1,13 @@
+loading-artwork:
+	Image: ca-loading-artwork.png
+	Image2x: ca-loading-artwork-2x.png
+	Image3x: ca-loading-artwork-3x.png
+	Regions:
+		logo: 0, 0, 1024, 256
+
+menu-logo:
+	Image: ca-menu-logo.png
+	Image2x: ca-menu-logo-2x.png
+	Image3x: ca-menu-logo-3x.png
+	Regions:
+		logo: 0, 0, 512, 256

@@ -1,0 +1,337 @@
+mcv:
+	idle: mcv.shp
+        Scale: 1.7
+		Start: 3
+		Facings: 8
+	icon: icon_mcv.shp
+		Start: 0
+		Offset: 0,0
+
+mcv.husk:
+	idle: mcv.shp
+		Start: 12
+		Facings: 1
+		ZOffset: -1023
+
+harvester:
+	idle: harvester.shp
+        Scale: 2
+		Start: 3
+		Facings: 8
+	harvest: harvester.shp
+        Scale: 2
+		Start: 180
+		Length: 1
+		Facings: 1
+		Tick: 200
+		ZOffset: 1
+		BlendMode: Multiply
+	dock: harvester.shp
+        Scale: 2
+        Start: 8
+	dock-loop: harvester.shp
+        Scale: 2
+        Start: 8
+	icon: icon_harv.shp
+		Start: 0
+		Offset: 0,0
+
+harvester.husk:
+	idle: harvester.shp
+		Start: 120
+		Facings: 1
+		ZOffset: -512
+
+trike:
+	idle: trike.shp
+        Scale:1.25
+		Start: 3
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4092
+		Tick: 50
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_tri.shp
+		Start: 0
+		Offset: 0,0
+
+quad:
+	idle: quad.shp
+        Scale: 1.4
+		Start: 2
+		Facings: 8
+	icon: icon_quad.shp
+		Start: 0
+		Offset: 0,0
+
+siege_tank:
+	idle: tankbase.shp
+        Scale: 2.5
+		Start: 2
+		Facings: 8
+	turret: siegetanktop.shp
+        Scale: 1.8
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 3671
+		Length: 3
+		BlendMode: Additive
+	icon: icon_siege.shp
+		Start: 0
+		Offset: 0,0
+ 
+siege_tank.husk:
+	idle: siegetanktopdead.shp
+        Scale: 2.5
+		Start: 1
+		Facings: 1
+		ZOffset: -512
+	turret: siegetanktopdead.shp
+        Scale: 2.5
+		Start: 1
+		Facings: 1
+		ZOffset: -512 
+        
+guardian_tank:
+    idle: tankbase.shp
+        Scale: 3
+		Start: 2
+		Facings: 8
+	turret: siegetanktop.shp
+        Scale: 2.5
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 3671
+		Length: 3
+		BlendMode: Additive
+	icon: icon_guardiantank.shp
+		Start: 0
+		Offset: 0,0
+        
+
+
+missile_tank:
+	idle: missilelauncher.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	icon: icon_miss.shp
+		Start: 0
+		Offset: 0,0
+        
+missile_tank_heavy:
+	idle: 1hmisslauncher.shp
+        Scale: 3
+		Start: 2
+		Facings: 8
+	icon: icon_hmiss.shp
+		Start: 0
+		Offset: 0,0
+
+missile_tank.husk:
+	idle: missilelauncher.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+sonic_tank:
+	idle: sonictank.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	icon: icon_soni.shp
+		Start: 0
+		Offset: 0,0
+
+sonic_tank.husk:
+	idle: sonictank.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+combat_tank_a:
+	idle: tankbase.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	turret: tanktop.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_ctank.shp
+		Start: 0
+		Offset: 0,0
+
+combat_tank_a.husk:
+	idle: tanktop.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+	turret: tanktop.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+combat_tank_h:
+	idle: tankbase.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	turret: tanktop.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_ctank.shp
+		Start: 0
+		Offset: 0,0
+
+combat_tank_h.husk:
+	idle: tanktop.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+	turret: tanktop.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+combat_tank_o:
+	idle: tankbase.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	turret: tanktop.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_ctank.shp
+		Start: 0
+		Offset: 0,0
+
+combat_tank_o.husk:
+	idle: tanktop.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+	turret: tanktop.shp
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+devastator:
+	idle: devastator2.shp
+        Scale: 3
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4060
+		Tick: 80
+		Facings: -32
+		BlendMode: Additive
+	active: DATA.R8
+		Start: 3839
+		Length: 14
+		Tick: 130
+		BlendMode: Additive
+	active-2: DATA.R8
+		Start: 4152
+		Length: 12
+		Tick: 110
+		BlendMode: Additive
+	icon: icon_deva.shp
+		Start: 0
+		Offset: 0,0
+
+devastator.husk:
+	idle: devastator.shp
+        Scale: 3
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+
+raider:
+	idle: raider.shp
+        Scale:1.25
+		Start: 3
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 3996
+		Tick: 50
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_raid.shp
+		Start: 0
+		Offset: 0,0
+
+stealth_raider:
+	idle: raider.shp
+        Scale:1.25
+		Start: 3
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 3996
+		Tick: 50
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_sraid.shp
+		Start: 0
+		Offset: 0,0
+
+deviator:
+	idle: deviator.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	icon: icon_devi.shp
+		Start: 0
+		Offset: 0,0
+
+deviator.husk:
+	idle: deviator.shp
+        Scale: 2
+		Start: 12
+		Facings: 1
+		ZOffset: -512
+        
+las_tank:
+	idle: tankbase.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	turret: tanktop.shp
+        Scale: 2
+		Start: 2
+		Facings: 8
+	muzzle: DATA.R8
+		Start: 4028
+		Tick: 60
+		Facings: -32
+		BlendMode: Additive
+	icon: icon_lastank.shp
+		Start: 0
+		Offset: 0,0        
